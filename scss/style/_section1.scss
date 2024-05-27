@@ -1,0 +1,24 @@
+.s-1 {
+    background-color: bisque;
+    padding: 50px 0;
+    .container {
+        max-width: 1180px;
+        width: 100%;
+        margin: 0 auto;
+        .wrapper {
+            @include goflex;
+            .card1 {
+                @extend %mycard;
+            }
+            .card2 {
+                @extend %mycard;
+            }
+            .card3 {
+                @extend %mycard;
+            }
+            .card4 {
+                @extend %mycard;
+            }
+        }
+    }
+}

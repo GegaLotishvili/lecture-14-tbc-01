@@ -1,0 +1,18 @@
+%mycard {
+    width: 250px;
+    height: 400px;
+    background-color: lightgreen;
+    border-radius: 12px;
+    padding: 10px 5px;
+    border: 1px solid gray;
+    @media (max-width: 1100px) {
+        width: 200px;
+        height: 300px;
+        background-color: aqua;
+    }
+    @media (max-width: 800px) {
+        width: 150px;
+        height: 250px;
+        background-color: rgb(8, 82, 82);
+    }
+}

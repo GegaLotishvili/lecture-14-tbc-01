@@ -1,0 +1,42 @@
+header {
+    background-color: aquamarine;
+    padding: 10px 0;
+    .container {
+        max-width: 1180px;
+        width: 100%;
+        margin: 0 auto;
+        @include goflex(row, space-between, center, nowrap);
+        @media (max-width: 1200px) {
+            width: 95%;
+        }
+        @media (max-width: 800px) {
+            width: 90%;
+        }
+        .logo {
+            font-size: 58px;
+            color: blueviolet;
+            &:hover {
+                color: red;
+            }
+        }
+        nav {
+            @media (max-width: 800px) {
+                display: none;
+            }
+            ul {
+                display: flex;
+                gap: 30px;
+                a {
+                    font-size: 34px;
+                }
+            }
+        }
+        .fa-bars {
+            display: none;
+            font-size: 34px;
+            @media (max-width: 800px) {
+                display: inline-block;
+            }
+        }
+    }
+}
